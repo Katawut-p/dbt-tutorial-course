@@ -1,7 +1,7 @@
 WITH source AS (
 	SELECT *
 
-	FROM {{ source('thelook_ecommerce', 'orders') }}
+	FROM {{ source('thelook_ecommerce', 'orders') }} -- db, table_name
 )
 
 SELECT
