@@ -3,3 +3,4 @@
 /logs
 logs
 .vscode/settings.json
+.vscode/scp.json
