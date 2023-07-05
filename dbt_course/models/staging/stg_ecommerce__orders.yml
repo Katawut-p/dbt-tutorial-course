@@ -24,7 +24,7 @@ models:
                 - Cancelled
                 - Shipped
                 - Complete
-                # - Returned
+                - Returned
 
       - name: gender
         description: ""
@@ -40,6 +40,9 @@ models:
 
       - name: delivered_at
         description: ""
+        tests:
+          - not_null:
+              where: "returned_at IS NOT NULL OR status = 'Complete'"
 
       - name: num_of_item
         description: ""
