@@ -9,6 +9,9 @@ config-version: 2
 # This setting configures which "profile" dbt uses for this project.
 profile: 'dbt_course'
 
+vars:
+  dbt_date:time_zone: 'Asia/Bangkok'
+
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
@@ -50,7 +53,7 @@ models:
 
 tests:
   dbt_course:
-  # set error severity all folder = errors
+  # set default error severity all folder = errors
     staging:
       +severity: warn
     intermediate:
