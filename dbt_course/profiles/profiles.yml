@@ -1,0 +1,15 @@
+dbt_course:
+  outputs:
+    bigquery_learning:
+      dataset: dbt_course
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: dbttesting-390403
+      threads: 1
+      type: bigquery
+      timezone: 'Asia/Bangkok'
+      
+  target: bigquery_learning
