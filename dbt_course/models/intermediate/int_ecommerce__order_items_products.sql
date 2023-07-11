@@ -1,3 +1,5 @@
+{{ config(tags=['order', 'item', 'products']) }}
+
 WITH products AS (
     SELECT
         product_id,

@@ -49,7 +49,9 @@ models:
         relation: true
         columns: true
         # Table will delete at 120 hours after creation
-      +hours_to_expiration: 120 
+      +hours_to_expiration: 120
+    intermediate:
+      +tags: ['order', 'item', 'products']
 
 tests:
   dbt_course:

@@ -1,3 +1,5 @@
+{{ config(tags=['order']) }}
+
 WITH source AS (
         SELECT *
 
